@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Version>1.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
@@ -15,5 +15,9 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\R5T.F0144\R5T.F0144.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0141\source\R5T.T0141\R5T.T0141.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\_Components\" />
   </ItemGroup>
 </Project>
