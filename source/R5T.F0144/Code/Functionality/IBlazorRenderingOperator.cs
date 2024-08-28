@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -44,7 +44,7 @@ namespace R5T.F0144
 
             await using var serviceProvider = services.BuildServiceProvider();
 
-            using var loggerFactory = new Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory();
+            using var loggerFactory = new NullLoggerFactory();
 
             await using var htmlRenderer = new HtmlRenderer(
                 serviceProvider,

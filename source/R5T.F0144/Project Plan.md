@@ -2,6 +2,11 @@
 Blazor component rendering operator. (net8.0)
 
 
+## Dependencies
+
+=> NOTE! The Microsoft.AspNetCore.Components.Web package is required, but only for HtmRender class.
+
+
 ## Example Usage
 
 * R5T.F0083
